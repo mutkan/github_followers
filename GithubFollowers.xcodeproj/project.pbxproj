@@ -13,6 +13,8 @@
 		4CF810F42484DBB4004AE846 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CF810F22484DBB4004AE846 /* Main.storyboard */; };
 		4CF810F62484DBB5004AE846 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CF810F52484DBB5004AE846 /* Assets.xcassets */; };
 		4CF810F92484DBB5004AE846 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CF810F72484DBB5004AE846 /* LaunchScreen.storyboard */; };
+		4CF811012484DF44004AE846 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF811002484DF44004AE846 /* SearchViewController.swift */; };
+		4CF811032484DFE0004AE846 /* FavoritesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF811022484DFE0004AE846 /* FavoritesListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		4CF810F52484DBB5004AE846 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CF810F82484DBB5004AE846 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CF810FA2484DBB5004AE846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CF811002484DF44004AE846 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = SOURCE_ROOT; };
+		4CF811022484DFE0004AE846 /* FavoritesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				4CF810F52484DBB5004AE846 /* Assets.xcassets */,
 				4CF810F72484DBB5004AE846 /* LaunchScreen.storyboard */,
 				4CF810FA2484DBB5004AE846 /* Info.plist */,
+				4CF811002484DF44004AE846 /* SearchViewController.swift */,
+				4CF811022484DFE0004AE846 /* FavoritesListViewController.swift */,
 			);
 			path = GithubFollowers;
 			sourceTree = "<group>";
@@ -138,8 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CF811032484DFE0004AE846 /* FavoritesListViewController.swift in Sources */,
 				4CF810F12484DBB4004AE846 /* ViewController.swift in Sources */,
 				4CF810ED2484DBB4004AE846 /* AppDelegate.swift in Sources */,
+				4CF811012484DF44004AE846 /* SearchViewController.swift in Sources */,
 				4CF810EF2484DBB4004AE846 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
