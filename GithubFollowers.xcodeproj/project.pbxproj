@@ -39,6 +39,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C479AAC24877438001FE7C0 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				4CF810EE2484DBB4004AE846 /* SceneDelegate.swift */,
+				4CF810EC2484DBB4004AE846 /* AppDelegate.swift */,
+				4CF810F52484DBB5004AE846 /* Assets.xcassets */,
+				4CF810F72484DBB5004AE846 /* LaunchScreen.storyboard */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		4C479AAD2487744B001FE7C0 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				4C479AAE248774B1001FE7C0 /* CustomTitleLabel.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 		4CF810E02484DBB4004AE846 = {
 			isa = PBXGroup;
 			children = (
@@ -58,11 +77,9 @@
 		4CF810EB2484DBB4004AE846 /* GithubFollowers */ = {
 			isa = PBXGroup;
 			children = (
-				4CF810EC2484DBB4004AE846 /* AppDelegate.swift */,
-				4CF810EE2484DBB4004AE846 /* SceneDelegate.swift */,
+				4C479AAD2487744B001FE7C0 /* CustomViews */,
+				4C479AAC24877438001FE7C0 /* Support */,
 				4CF810F02484DBB4004AE846 /* ViewController.swift */,
-				4CF810F52484DBB5004AE846 /* Assets.xcassets */,
-				4CF810F72484DBB5004AE846 /* LaunchScreen.storyboard */,
 				4CF810FA2484DBB5004AE846 /* Info.plist */,
 				4CF811002484DF44004AE846 /* SearchViewController.swift */,
 				4CF811022484DFE0004AE846 /* FavoritesListViewController.swift */,
