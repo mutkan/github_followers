@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4C479AAF248774B1001FE7C0 /* CustomTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C479AAE248774B1001FE7C0 /* CustomTitleLabel.swift */; };
+		4CAC3A4B2489F55E000A097A /* CustomBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAC3A4A2489F55E000A097A /* CustomBodyLabel.swift */; };
 		4CF810ED2484DBB4004AE846 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF810EC2484DBB4004AE846 /* AppDelegate.swift */; };
 		4CF810EF2484DBB4004AE846 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF810EE2484DBB4004AE846 /* SceneDelegate.swift */; };
 		4CF810F12484DBB4004AE846 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF810F02484DBB4004AE846 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		4C479AAE248774B1001FE7C0 /* CustomTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTitleLabel.swift; sourceTree = "<group>"; };
+		4CAC3A4A2489F55E000A097A /* CustomBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBodyLabel.swift; sourceTree = "<group>"; };
 		4CF810E92484DBB4004AE846 /* GithubFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CF810EC2484DBB4004AE846 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CF810EE2484DBB4004AE846 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				4C479AAE248774B1001FE7C0 /* CustomTitleLabel.swift */,
+				4CAC3A4A2489F55E000A097A /* CustomBodyLabel.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 				4C479AAF248774B1001FE7C0 /* CustomTitleLabel.swift in Sources */,
 				4CF811032484DFE0004AE846 /* FavoritesListViewController.swift in Sources */,
 				4CF810F12484DBB4004AE846 /* ViewController.swift in Sources */,
+				4CAC3A4B2489F55E000A097A /* CustomBodyLabel.swift in Sources */,
 				4CF810ED2484DBB4004AE846 /* AppDelegate.swift in Sources */,
 				4CF811012484DF44004AE846 /* SearchViewController.swift in Sources */,
 				4CF810EF2484DBB4004AE846 /* SceneDelegate.swift in Sources */,
