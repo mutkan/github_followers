@@ -9,10 +9,11 @@
 import UIKit
 
 class CustomButton: UIButton{
+    
     init(backgroundColor: UIColor, title: String) {
         super.init(frame: .zero)
         self.backgroundColor = backgroundColor
-        self.setTitle(title, for: .highlighted)
+        self.setTitle(title, for: .normal)
         configure()
     }
     

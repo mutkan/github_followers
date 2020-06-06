@@ -10,9 +10,10 @@
 		4C479AAF248774B1001FE7C0 /* CustomTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C479AAE248774B1001FE7C0 /* CustomTitleLabel.swift */; };
 		4CAC3A4B2489F55E000A097A /* CustomBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAC3A4A2489F55E000A097A /* CustomBodyLabel.swift */; };
 		4CAC3A4D2489F76B000A097A /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAC3A4C2489F76B000A097A /* CustomButton.swift */; };
+		4CAC3A4F248A0079000A097A /* AlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAC3A4E248A0079000A097A /* AlertVC.swift */; };
+		4CAC3A53248A0BD9000A097A /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAC3A52248A0BD9000A097A /* UIViewController+Ext.swift */; };
 		4CF810ED2484DBB4004AE846 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF810EC2484DBB4004AE846 /* AppDelegate.swift */; };
 		4CF810EF2484DBB4004AE846 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF810EE2484DBB4004AE846 /* SceneDelegate.swift */; };
-		4CF810F12484DBB4004AE846 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF810F02484DBB4004AE846 /* ViewController.swift */; };
 		4CF810F62484DBB5004AE846 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CF810F52484DBB5004AE846 /* Assets.xcassets */; };
 		4CF810F92484DBB5004AE846 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CF810F72484DBB5004AE846 /* LaunchScreen.storyboard */; };
 		4CF811012484DF44004AE846 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF811002484DF44004AE846 /* SearchViewController.swift */; };
@@ -23,14 +24,15 @@
 		4C479AAE248774B1001FE7C0 /* CustomTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTitleLabel.swift; sourceTree = "<group>"; };
 		4CAC3A4A2489F55E000A097A /* CustomBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBodyLabel.swift; sourceTree = "<group>"; };
 		4CAC3A4C2489F76B000A097A /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		4CAC3A4E248A0079000A097A /* AlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertVC.swift; sourceTree = "<group>"; };
+		4CAC3A52248A0BD9000A097A /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		4CF810E92484DBB4004AE846 /* GithubFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CF810EC2484DBB4004AE846 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CF810EE2484DBB4004AE846 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4CF810F02484DBB4004AE846 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4CF810F52484DBB5004AE846 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CF810F82484DBB5004AE846 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CF810FA2484DBB5004AE846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4CF811002484DF44004AE846 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = SOURCE_ROOT; };
+		4CF811002484DF44004AE846 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = GithubFollowers/Screens/SearchViewController.swift; sourceTree = SOURCE_ROOT; };
 		4CF811022484DFE0004AE846 /* FavoritesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,8 +64,26 @@
 				4C479AAE248774B1001FE7C0 /* CustomTitleLabel.swift */,
 				4CAC3A4A2489F55E000A097A /* CustomBodyLabel.swift */,
 				4CAC3A4C2489F76B000A097A /* CustomButton.swift */,
+				4CAC3A4E248A0079000A097A /* AlertVC.swift */,
 			);
 			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		4CAC3A50248A0624000A097A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				4CF811002484DF44004AE846 /* SearchViewController.swift */,
+				4CF811022484DFE0004AE846 /* FavoritesListViewController.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		4CAC3A51248A0BB1000A097A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4CAC3A52248A0BD9000A097A /* UIViewController+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		4CF810E02484DBB4004AE846 = {
@@ -85,12 +105,11 @@
 		4CF810EB2484DBB4004AE846 /* GithubFollowers */ = {
 			isa = PBXGroup;
 			children = (
+				4CAC3A51248A0BB1000A097A /* Extensions */,
+				4CAC3A50248A0624000A097A /* Screens */,
 				4C479AAD2487744B001FE7C0 /* CustomViews */,
 				4C479AAC24877438001FE7C0 /* Support */,
-				4CF810F02484DBB4004AE846 /* ViewController.swift */,
 				4CF810FA2484DBB5004AE846 /* Info.plist */,
-				4CF811002484DF44004AE846 /* SearchViewController.swift */,
-				4CF811022484DFE0004AE846 /* FavoritesListViewController.swift */,
 			);
 			path = GithubFollowers;
 			sourceTree = "<group>";
@@ -167,12 +186,13 @@
 			files = (
 				4C479AAF248774B1001FE7C0 /* CustomTitleLabel.swift in Sources */,
 				4CF811032484DFE0004AE846 /* FavoritesListViewController.swift in Sources */,
-				4CF810F12484DBB4004AE846 /* ViewController.swift in Sources */,
+				4CAC3A4F248A0079000A097A /* AlertVC.swift in Sources */,
 				4CAC3A4B2489F55E000A097A /* CustomBodyLabel.swift in Sources */,
 				4CF810ED2484DBB4004AE846 /* AppDelegate.swift in Sources */,
 				4CF811012484DF44004AE846 /* SearchViewController.swift in Sources */,
 				4CF810EF2484DBB4004AE846 /* SceneDelegate.swift in Sources */,
 				4CAC3A4D2489F76B000A097A /* CustomButton.swift in Sources */,
+				4CAC3A53248A0BD9000A097A /* UIViewController+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
