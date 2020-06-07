@@ -38,6 +38,7 @@ class AlertVC: UIViewController{
         
         configureContainerView()
         configureTitleLabel()
+        configureActionButton()
     }
     
     func configureContainerView(){
@@ -68,5 +69,22 @@ class AlertVC: UIViewController{
             titleLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -padding),
             titleLabel.heightAnchor.constraint(equalToConstant: 28)])
         
+    }
+    func configureActionButton(){
+        containerView.addSubview(actionButton)
+        
+        actionButton.setTitle(buttonTitle ?? "Ok", for: .normal)
+        actionButton.addTarget(self, action: #selector(dismissVC), for: .touchUpInside)
+        
+        NSLayoutConstraint.activate([
+            actionButton.leadingAnchor.constraint(equalTo: containerView.leadingAnchor,constant: padding),
+            actionButton.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -padding),
+            actionButton.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -padding),
+            actionButton.heightAnchor.constraint(equalToConstant: 48)
+        ])
+    }
+    
+    @objc func dismissVC(){
+        dismiss(animated: true)
     }
 }
