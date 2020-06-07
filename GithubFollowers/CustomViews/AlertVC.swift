@@ -9,17 +9,16 @@
 import UIKit
 
 class AlertVC: UIViewController{
-    
-    
     let containerView = UIView()
     let titleLabel = CustomTitleLabel(textAlignment: .center, fontSize: 20)
     let messageLabel = CustomBodyLabel(textAlignment: .center)
     let actionButton = CustomButton(backgroundColor: .systemPink, title: "Ok")
     
-    
     var alertTitle:String?
     var alertMessage:String?
     var buttonTitle:String?
+    
+    let padding: CGFloat = 20
     
     init(title: String, message: String, buttonTitle: String) {
         super.init(nibName: nil, bundle: nil)
