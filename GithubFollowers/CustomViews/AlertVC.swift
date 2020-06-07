@@ -37,6 +37,7 @@ class AlertVC: UIViewController{
         view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.75)
         
         configureContainerView()
+        configureTitleLabel()
     }
     
     func configureContainerView(){
@@ -54,5 +55,18 @@ class AlertVC: UIViewController{
             containerView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             containerView.heightAnchor.constraint(equalToConstant: 299),
             containerView.widthAnchor.constraint(equalToConstant: 200)])
+    }
+    
+    func configureTitleLabel(){
+        containerView.addSubview(titleLabel)
+        
+        titleLabel.text = alertTitle ?? "Something went wrong"
+        
+        NSLayoutConstraint.activate([
+            titleLabel.topAnchor.constraint(equalTo: containerView.topAnchor, constant: padding),
+            titleLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: padding),
+            titleLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -padding),
+            titleLabel.heightAnchor.constraint(equalToConstant: 28)])
+        
     }
 }
