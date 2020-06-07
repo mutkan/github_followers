@@ -39,13 +39,14 @@ class AlertVC: UIViewController{
         configureContainerView()
         configureTitleLabel()
         configureActionButton()
+        configureMessageLabel()
+        
     }
     
     func configureContainerView(){
         view.addSubview(containerView)
         
         containerView.backgroundColor = .systemBackground
-        
         containerView.layer.cornerRadius = 22
         containerView.layer.borderWidth = 2
         containerView.layer.borderColor = UIColor.blue.cgColor
@@ -70,6 +71,20 @@ class AlertVC: UIViewController{
             titleLabel.heightAnchor.constraint(equalToConstant: 28)])
         
     }
+    
+    func configureMessageLabel(){
+        containerView.addSubview(messageLabel)
+        
+        messageLabel.text = alertMessage ?? "Something went wrong"
+        messageLabel.numberOfLines = 4
+        
+        NSLayoutConstraint.activate([
+            messageLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 8),
+            messageLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: padding),
+            messageLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -padding),
+            messageLabel.bottomAnchor.constraint(equalTo: actionButton.topAnchor, constant: 8   )])
+    }
+    
     func configureActionButton(){
         containerView.addSubview(actionButton)
         
