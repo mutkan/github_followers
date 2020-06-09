@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SearchViewController: UIViewController{
+class SearchViewController: UIViewController, UITextFieldDelegate{
     
     let callToActionButton = CustomButton(backgroundColor: .systemGreen, title: "Get Followers")
     let userTextField = CustomTextField()
@@ -48,6 +48,8 @@ class SearchViewController: UIViewController{
     func configureTextField(){
         view.addSubview(userTextField)
         
+        userTextField.delegate = self
+        
         NSLayoutConstraint.activate([
             userTextField.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 60),
             userTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50),
@@ -79,6 +81,15 @@ class SearchViewController: UIViewController{
             return
         }
         
+        let followerVC = FollowerListVC()
+        followerVC.userName = userTextField.text
+        followerVC.title = userTextField.text
+        navigationController?.pushViewController(followerVC, animated: true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        pushFollowersListVC()
+        return true
     }
     
 }
