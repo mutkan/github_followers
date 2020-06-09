@@ -23,7 +23,7 @@ class SearchViewController: UIViewController{
         configureCallToActionButton()
         configureLogoImageView()
         configureTextField()
-        
+        createDismissKeyboardTapGestures()
     }
     
     
@@ -66,6 +66,11 @@ class SearchViewController: UIViewController{
             logoImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             logoImageView.heightAnchor.constraint(equalToConstant: 200),
             logoImageView.widthAnchor.constraint(equalToConstant: 200)])
+    }
+    
+    func createDismissKeyboardTapGestures(){
+        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
+        view.addGestureRecognizer(tap)
     }
     
     @objc func pushFollowersListVC(){
