@@ -10,6 +10,8 @@
 		4C479AAF248774B1001FE7C0 /* CustomTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C479AAE248774B1001FE7C0 /* CustomTitleLabel.swift */; };
 		4C4A80E1248DDC3300C1AF67 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A80E0248DDC3300C1AF67 /* CustomTextField.swift */; };
 		4C4A80E3248F46EC00C1AF67 /* FollowerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A80E2248F46EC00C1AF67 /* FollowerListVC.swift */; };
+		4C4A80E62490A1D100C1AF67 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A80E52490A1D100C1AF67 /* Follower.swift */; };
+		4C4A80E82490A1DE00C1AF67 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A80E72490A1DE00C1AF67 /* User.swift */; };
 		4CAC3A4B2489F55E000A097A /* CustomBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAC3A4A2489F55E000A097A /* CustomBodyLabel.swift */; };
 		4CAC3A4D2489F76B000A097A /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAC3A4C2489F76B000A097A /* CustomButton.swift */; };
 		4CAC3A4F248A0079000A097A /* AlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAC3A4E248A0079000A097A /* AlertVC.swift */; };
@@ -26,6 +28,8 @@
 		4C479AAE248774B1001FE7C0 /* CustomTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTitleLabel.swift; sourceTree = "<group>"; };
 		4C4A80E0248DDC3300C1AF67 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		4C4A80E2248F46EC00C1AF67 /* FollowerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListVC.swift; sourceTree = "<group>"; };
+		4C4A80E52490A1D100C1AF67 /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
+		4C4A80E72490A1DE00C1AF67 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4CAC3A4A2489F55E000A097A /* CustomBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBodyLabel.swift; sourceTree = "<group>"; };
 		4CAC3A4C2489F76B000A097A /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		4CAC3A4E248A0079000A097A /* AlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertVC.swift; sourceTree = "<group>"; };
@@ -74,6 +78,15 @@
 			path = CustomViews;
 			sourceTree = "<group>";
 		};
+		4C4A80E42490A1AB00C1AF67 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4C4A80E52490A1D100C1AF67 /* Follower.swift */,
+				4C4A80E72490A1DE00C1AF67 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		4CAC3A50248A0624000A097A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +124,7 @@
 		4CF810EB2484DBB4004AE846 /* GithubFollowers */ = {
 			isa = PBXGroup;
 			children = (
+				4C4A80E42490A1AB00C1AF67 /* Model */,
 				4CAC3A51248A0BB1000A097A /* Extensions */,
 				4CAC3A50248A0624000A097A /* Screens */,
 				4C479AAD2487744B001FE7C0 /* CustomViews */,
@@ -190,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C4A80E82490A1DE00C1AF67 /* User.swift in Sources */,
 				4C4A80E3248F46EC00C1AF67 /* FollowerListVC.swift in Sources */,
 				4C479AAF248774B1001FE7C0 /* CustomTitleLabel.swift in Sources */,
 				4CF811032484DFE0004AE846 /* FavoritesListViewController.swift in Sources */,
@@ -197,6 +212,7 @@
 				4CAC3A4B2489F55E000A097A /* CustomBodyLabel.swift in Sources */,
 				4C4A80E1248DDC3300C1AF67 /* CustomTextField.swift in Sources */,
 				4CF810ED2484DBB4004AE846 /* AppDelegate.swift in Sources */,
+				4C4A80E62490A1D100C1AF67 /* Follower.swift in Sources */,
 				4CF811012484DF44004AE846 /* SearchViewController.swift in Sources */,
 				4CF810EF2484DBB4004AE846 /* SceneDelegate.swift in Sources */,
 				4CAC3A4D2489F76B000A097A /* CustomButton.swift in Sources */,
