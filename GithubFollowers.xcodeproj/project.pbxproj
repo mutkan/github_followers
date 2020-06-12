@@ -14,6 +14,7 @@
 		4C4A80E82490A1DE00C1AF67 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A80E72490A1DE00C1AF67 /* User.swift */; };
 		4C4A80EC2490B7E500C1AF67 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A80EB2490B7E500C1AF67 /* ErrorMessage.swift */; };
 		4C4A80EE2490B81D00C1AF67 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A80ED2490B81D00C1AF67 /* NetworkManager.swift */; };
+		4C4A80F02493409D00C1AF67 /* CustomAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A80EF2493409D00C1AF67 /* CustomAvatarImageView.swift */; };
 		4CAC3A4B2489F55E000A097A /* CustomBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAC3A4A2489F55E000A097A /* CustomBodyLabel.swift */; };
 		4CAC3A4D2489F76B000A097A /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAC3A4C2489F76B000A097A /* CustomButton.swift */; };
 		4CAC3A4F248A0079000A097A /* AlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAC3A4E248A0079000A097A /* AlertVC.swift */; };
@@ -34,6 +35,7 @@
 		4C4A80E72490A1DE00C1AF67 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4C4A80EB2490B7E500C1AF67 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		4C4A80ED2490B81D00C1AF67 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		4C4A80EF2493409D00C1AF67 /* CustomAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomAvatarImageView.swift; path = GithubFollowers/CustomAvatarImageView.swift; sourceTree = SOURCE_ROOT; };
 		4CAC3A4A2489F55E000A097A /* CustomBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBodyLabel.swift; sourceTree = "<group>"; };
 		4CAC3A4C2489F76B000A097A /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		4CAC3A4E248A0079000A097A /* AlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertVC.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				4CAC3A4C2489F76B000A097A /* CustomButton.swift */,
 				4CAC3A4E248A0079000A097A /* AlertVC.swift */,
 				4C4A80E0248DDC3300C1AF67 /* CustomTextField.swift */,
+				4C4A80EF2493409D00C1AF67 /* CustomAvatarImageView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				4CF810EF2484DBB4004AE846 /* SceneDelegate.swift in Sources */,
 				4C4A80EE2490B81D00C1AF67 /* NetworkManager.swift in Sources */,
 				4CAC3A4D2489F76B000A097A /* CustomButton.swift in Sources */,
+				4C4A80F02493409D00C1AF67 /* CustomAvatarImageView.swift in Sources */,
 				4CAC3A53248A0BD9000A097A /* UIViewController+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
