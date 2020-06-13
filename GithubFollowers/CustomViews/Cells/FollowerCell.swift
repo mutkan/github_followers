@@ -11,6 +11,7 @@ import UIKit
 class FollowerCell: UICollectionViewCell {
     let avatarImageView = CustomAvatarImageView(frame: .zero)
     let usernameLabel = CustomTitleLabel(textAlignment: .center, fontSize: 16)
+    static let reuseId = "FollowerCell"
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -19,6 +20,10 @@ class FollowerCell: UICollectionViewCell {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func setUserName(follower: Follower){
+        usernameLabel.text = follower.login
     }
     
     func configure(){
