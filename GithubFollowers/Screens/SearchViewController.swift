@@ -82,7 +82,7 @@ class SearchViewController: UIViewController, UITextFieldDelegate{
         }
         
         let followerVC = FollowerListVC()
-        followerVC.userName = userTextField.text
+        followerVC.userName = userTextField.text ?? ""
         followerVC.title = userTextField.text
         navigationController?.pushViewController(followerVC, animated: true)
     }
