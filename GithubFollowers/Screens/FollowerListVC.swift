@@ -30,7 +30,10 @@ class FollowerListVC: UIViewController{
     }
     
     func getFollowers(){
-        NetworkManager.shared.getFollowers(for: userName, page: 1){ result in
+        NetworkManager.shared.getFollowers(for: userName, page: 1){ [weak self] result in
+            guard let self = self else{
+                return
+            }
             switch result {
             case .success(let followers):
                 self.followers = followers
@@ -50,21 +53,8 @@ class FollowerListVC: UIViewController{
         }
     }
     
-    func createThreeColFlowLayout() -> UICollectionViewFlowLayout{
-        let width = view.bounds.width
-        let padding : CGFloat = 12
-        let minItemSpacing: CGFloat = 10
-        let availableWidth = width - (padding * 2) - (minItemSpacing * 2)
-        let itemWidth = availableWidth / 3
-        
-        let flowLayout = UICollectionViewFlowLayout()
-        flowLayout.sectionInset = UIEdgeInsets(top: padding, left: padding, bottom: padding, right: padding)
-        flowLayout.itemSize = CGSize(width: itemWidth, height: itemWidth+40)
-        return flowLayout
-    }
-    
     func configureCollectionView(){
-        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createThreeColFlowLayout())
+        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: UIHelper.createThreeColFlowLayout(in: view))
         view.addSubview(collectionView)
         collectionView.backgroundColor = .systemBackground
         collectionView.register(FollowerCell.self, forCellWithReuseIdentifier: FollowerCell.reuseId)
@@ -74,7 +64,7 @@ class FollowerListVC: UIViewController{
         dataSource = UICollectionViewDiffableDataSource<Section, Follower>(collectionView: collectionView, cellProvider: { (collectionView, indexPath, follower) -> UICollectionViewCell? in
             
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FollowerCell.reuseId, for: indexPath) as? FollowerCell
-            cell?.setUserName(follower: follower)
+            cell?.setUser(follower: follower)
             return cell
         })
     }
