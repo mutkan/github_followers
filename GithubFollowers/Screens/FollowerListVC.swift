@@ -10,6 +10,8 @@ import UIKit
 
 class FollowerListVC: UIViewController{
     var userName: String = ""
+    var page = 1
+    var hasMoreFollowers = true
     
     var followers: [Follower] = []
     enum Section{
@@ -26,17 +28,18 @@ class FollowerListVC: UIViewController{
         
         configureCollectionView()
         configureDataSource()
-        getFollowers()
+        getFollowers(userName: userName, page: page)
     }
     
-    func getFollowers(){
-        NetworkManager.shared.getFollowers(for: userName, page: 1){ [weak self] result in
+    func getFollowers(userName: String, page: Int){
+        NetworkManager.shared.getFollowers(for: userName, page: page){ [weak self] result in
             guard let self = self else{
                 return
             }
             switch result {
             case .success(let followers):
-                self.followers = followers
+                if followers.count < 100 {self.hasMoreFollowers = false}
+                self.followers.append(contentsOf: followers)
                 self.updateData()
             case .failure(let error):
                 self.presentAlertOnMainThread(title: "Error", message: error.rawValue , buttonTitle: "Ok")
@@ -56,6 +59,7 @@ class FollowerListVC: UIViewController{
     func configureCollectionView(){
         collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: UIHelper.createThreeColFlowLayout(in: view))
         view.addSubview(collectionView)
+        collectionView.delegate = self
         collectionView.backgroundColor = .systemBackground
         collectionView.register(FollowerCell.self, forCellWithReuseIdentifier: FollowerCell.reuseId)
     }
@@ -72,5 +76,24 @@ class FollowerListVC: UIViewController{
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+}
+
+extension FollowerListVC: UICollectionViewDelegate {
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+                let offsetY = scrollView.contentOffset.y
+        let contentHeight = scrollView.contentSize.height
+        let height = scrollView.frame.size.height
+        
+        print("offset: \(offsetY)")
+        print("contentheight: \(contentHeight)")
+        print("height: \(height)")
+        
+        if offsetY > contentHeight - height{
+            guard hasMoreFollowers else { return }
+            page += 1
+            getFollowers(userName: userName, page: page)
+        }
+
     }
 }
