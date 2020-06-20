@@ -37,7 +37,7 @@
 		4C4A80E72490A1DE00C1AF67 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4C4A80EB2490B7E500C1AF67 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		4C4A80ED2490B81D00C1AF67 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		4C4A80EF2493409D00C1AF67 /* CustomAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomAvatarImageView.swift; path = GithubFollowers/CustomAvatarImageView.swift; sourceTree = SOURCE_ROOT; };
+		4C4A80EF2493409D00C1AF67 /* CustomAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomAvatarImageView.swift; path = GithubFollowers/CustomViews/ImageViews/CustomAvatarImageView.swift; sourceTree = SOURCE_ROOT; };
 		4C4A80F2249341A300C1AF67 /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
 		4C4A80F4249C6ABE00C1AF67 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		4CAC3A4A2489F55E000A097A /* CustomBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBodyLabel.swift; sourceTree = "<group>"; };
@@ -79,13 +79,12 @@
 		4C479AAD2487744B001FE7C0 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				4C4A80FA249DF63B00C1AF67 /* ViewControllers */,
+				4C4A80F9249DF62F00C1AF67 /* TextFields */,
+				4C4A80F8249DF62600C1AF67 /* Labels */,
+				4C4A80F7249DF61E00C1AF67 /* ImageViews */,
+				4C4A80F6249DF5ED00C1AF67 /* Buttons */,
 				4C4A80F12493418900C1AF67 /* Cells */,
-				4C479AAE248774B1001FE7C0 /* CustomTitleLabel.swift */,
-				4CAC3A4A2489F55E000A097A /* CustomBodyLabel.swift */,
-				4CAC3A4C2489F76B000A097A /* CustomButton.swift */,
-				4CAC3A4E248A0079000A097A /* AlertVC.swift */,
-				4C4A80E0248DDC3300C1AF67 /* CustomTextField.swift */,
-				4C4A80EF2493409D00C1AF67 /* CustomAvatarImageView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -122,6 +121,47 @@
 				4C4A80F2249341A300C1AF67 /* FollowerCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		4C4A80F6249DF5ED00C1AF67 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				4CAC3A4C2489F76B000A097A /* CustomButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		4C4A80F7249DF61E00C1AF67 /* ImageViews */ = {
+			isa = PBXGroup;
+			children = (
+				4C4A80EF2493409D00C1AF67 /* CustomAvatarImageView.swift */,
+			);
+			path = ImageViews;
+			sourceTree = "<group>";
+		};
+		4C4A80F8249DF62600C1AF67 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				4C479AAE248774B1001FE7C0 /* CustomTitleLabel.swift */,
+				4CAC3A4A2489F55E000A097A /* CustomBodyLabel.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		4C4A80F9249DF62F00C1AF67 /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				4C4A80E0248DDC3300C1AF67 /* CustomTextField.swift */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+		4C4A80FA249DF63B00C1AF67 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4CAC3A4E248A0079000A097A /* AlertVC.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		4CAC3A50248A0624000A097A /* Screens */ = {
