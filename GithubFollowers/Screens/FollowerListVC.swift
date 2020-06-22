@@ -43,6 +43,14 @@ class FollowerListVC: UIViewController{
             case .success(let followers):
                 if followers.count < 100 {self.hasMoreFollowers = false}
                 self.followers.append(contentsOf: followers)
+                
+                if followers.isEmpty {
+                    let message = "This user does not have followers"
+                    DispatchQueue.main.async {
+                        self.showEmptyStateView(with: message, in: self.view)
+                        return
+                    }
+                }
                 self.updateData()
             case .failure(let error):
                 self.presentAlertOnMainThread(title: "Error", message: error.rawValue , buttonTitle: "Ok")
@@ -84,7 +92,7 @@ class FollowerListVC: UIViewController{
 
 extension FollowerListVC: UICollectionViewDelegate {
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-                let offsetY = scrollView.contentOffset.y
+        let offsetY = scrollView.contentOffset.y
         let contentHeight = scrollView.contentSize.height
         let height = scrollView.frame.size.height
         
