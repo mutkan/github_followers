@@ -9,6 +9,11 @@
 import UIKit
 
 class CustomTitleLabel : UILabel{
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        configure()
+    }
+    
     init(textAlignment: NSTextAlignment, fontSize: CGFloat) {
         super.init(frame: .zero)
         self.textAlignment = textAlignment

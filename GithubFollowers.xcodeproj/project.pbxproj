@@ -20,6 +20,7 @@
 		4C4A80FD249FFED000C1AF67 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A80FC249FFED000C1AF67 /* EmptyStateView.swift */; };
 		4C4A80FF24A06AD000C1AF67 /* UserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A80FE24A06ACF00C1AF67 /* UserInfoVC.swift */; };
 		4C4A810124A30EF000C1AF67 /* UserInfoHeaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A810024A30EF000C1AF67 /* UserInfoHeaderVC.swift */; };
+		4C4A810324A310F300C1AF67 /* CustomSecondTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A810224A310F300C1AF67 /* CustomSecondTitleLabel.swift */; };
 		4CAC3A4B2489F55E000A097A /* CustomBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAC3A4A2489F55E000A097A /* CustomBodyLabel.swift */; };
 		4CAC3A4D2489F76B000A097A /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAC3A4C2489F76B000A097A /* CustomButton.swift */; };
 		4CAC3A4F248A0079000A097A /* AlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAC3A4E248A0079000A097A /* AlertVC.swift */; };
@@ -46,6 +47,7 @@
 		4C4A80FC249FFED000C1AF67 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 		4C4A80FE24A06ACF00C1AF67 /* UserInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoVC.swift; sourceTree = "<group>"; };
 		4C4A810024A30EF000C1AF67 /* UserInfoHeaderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoHeaderVC.swift; sourceTree = "<group>"; };
+		4C4A810224A310F300C1AF67 /* CustomSecondTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecondTitleLabel.swift; sourceTree = "<group>"; };
 		4CAC3A4A2489F55E000A097A /* CustomBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBodyLabel.swift; sourceTree = "<group>"; };
 		4CAC3A4C2489F76B000A097A /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		4CAC3A4E248A0079000A097A /* AlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertVC.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			children = (
 				4C479AAE248774B1001FE7C0 /* CustomTitleLabel.swift */,
 				4CAC3A4A2489F55E000A097A /* CustomBodyLabel.swift */,
+				4C4A810224A310F300C1AF67 /* CustomSecondTitleLabel.swift */,
 			);
 			path = Labels;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				4CF810ED2484DBB4004AE846 /* AppDelegate.swift in Sources */,
 				4C4A80E62490A1D100C1AF67 /* Follower.swift in Sources */,
 				4CF811012484DF44004AE846 /* SearchViewController.swift in Sources */,
+				4C4A810324A310F300C1AF67 /* CustomSecondTitleLabel.swift in Sources */,
 				4CF810EF2484DBB4004AE846 /* SceneDelegate.swift in Sources */,
 				4C4A80EE2490B81D00C1AF67 /* NetworkManager.swift in Sources */,
 				4CAC3A4D2489F76B000A097A /* CustomButton.swift in Sources */,
