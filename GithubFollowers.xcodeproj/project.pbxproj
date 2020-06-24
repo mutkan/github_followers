@@ -21,6 +21,7 @@
 		4C4A80FF24A06AD000C1AF67 /* UserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A80FE24A06ACF00C1AF67 /* UserInfoVC.swift */; };
 		4C4A810124A30EF000C1AF67 /* UserInfoHeaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A810024A30EF000C1AF67 /* UserInfoHeaderVC.swift */; };
 		4C4A810324A310F300C1AF67 /* CustomSecondTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A810224A310F300C1AF67 /* CustomSecondTitleLabel.swift */; };
+		4C4A810524A3118300C1AF67 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A810424A3118300C1AF67 /* Constants.swift */; };
 		4CAC3A4B2489F55E000A097A /* CustomBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAC3A4A2489F55E000A097A /* CustomBodyLabel.swift */; };
 		4CAC3A4D2489F76B000A097A /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAC3A4C2489F76B000A097A /* CustomButton.swift */; };
 		4CAC3A4F248A0079000A097A /* AlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAC3A4E248A0079000A097A /* AlertVC.swift */; };
@@ -48,6 +49,7 @@
 		4C4A80FE24A06ACF00C1AF67 /* UserInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoVC.swift; sourceTree = "<group>"; };
 		4C4A810024A30EF000C1AF67 /* UserInfoHeaderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoHeaderVC.swift; sourceTree = "<group>"; };
 		4C4A810224A310F300C1AF67 /* CustomSecondTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecondTitleLabel.swift; sourceTree = "<group>"; };
+		4C4A810424A3118300C1AF67 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4CAC3A4A2489F55E000A097A /* CustomBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBodyLabel.swift; sourceTree = "<group>"; };
 		4CAC3A4C2489F76B000A097A /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		4CAC3A4E248A0079000A097A /* AlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertVC.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			children = (
 				4C4A80EB2490B7E500C1AF67 /* ErrorMessage.swift */,
 				4C4A80F4249C6ABE00C1AF67 /* Helper.swift */,
+				4C4A810424A3118300C1AF67 /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				4C4A80E3248F46EC00C1AF67 /* FollowerListVC.swift in Sources */,
 				4C479AAF248774B1001FE7C0 /* CustomTitleLabel.swift in Sources */,
 				4CF811032484DFE0004AE846 /* FavoritesListViewController.swift in Sources */,
+				4C4A810524A3118300C1AF67 /* Constants.swift in Sources */,
 				4C4A80F5249C6ABE00C1AF67 /* Helper.swift in Sources */,
 				4CAC3A4F248A0079000A097A /* AlertVC.swift in Sources */,
 				4CAC3A4B2489F55E000A097A /* CustomBodyLabel.swift in Sources */,
