@@ -11,6 +11,7 @@ import UIKit
 class UserInfoVC: UIViewController{
     
     var userName: String = ""
+    let headerView = UIView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +22,7 @@ class UserInfoVC: UIViewController{
         
         navigationItem.rightBarButtonItem = doneButton
         
-        
+        layoutUI()
         NetworkManager.shared.getUserInfo(for: userName){
             [weak self] result in
             
@@ -29,12 +30,34 @@ class UserInfoVC: UIViewController{
             
             switch result {
             case .success(let user):
-                print(user)
+                DispatchQueue.main.async {
+                    self.add(childVC: UserInfoHeaderVC(user: user), to: self.headerView)
+                }
             case .failure(let error):
                 self.presentAlertOnMainThread(title: "Something went wrong", message: error.rawValue, buttonTitle: "Ok")
             }
         }
     }
+    
+    func layoutUI(){
+        view.addSubview(headerView)
+        headerView.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            headerView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            headerView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            headerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            headerView.heightAnchor.constraint(equalToConstant: 180)
+        ])
+    }
+    
+    func add(childVC: UIViewController, to containerView: UIView){
+        addChild(childVC)
+        containerView.addSubview(childVC.view)
+        childVC.view.frame = containerView.bounds
+        childVC.didMove(toParent: self) //called after the VC is added
+    }
+    
     
     @objc func dismissVC(){
         dismiss(animated: true)
