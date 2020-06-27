@@ -10,6 +10,11 @@ import UIKit
 
 class CustomButton: UIButton{
     
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        configure()
+    }
+    
     init(backgroundColor: UIColor, title: String) {
         super.init(frame: .zero)
         self.backgroundColor = backgroundColor
