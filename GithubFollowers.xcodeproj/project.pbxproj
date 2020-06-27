@@ -183,7 +183,6 @@
 			isa = PBXGroup;
 			children = (
 				4C4A80FC249FFED000C1AF67 /* EmptyStateView.swift */,
-				4C4A810024A30EF000C1AF67 /* UserInfoHeaderVC.swift */,
 				4C4A810624A6F8BF00C1AF67 /* CustomItemInfoView.swift */,
 			);
 			path = Views;
@@ -195,6 +194,7 @@
 				4CF811002484DF44004AE846 /* SearchViewController.swift */,
 				4CF811022484DFE0004AE846 /* FavoritesListViewController.swift */,
 				4C4A80E2248F46EC00C1AF67 /* FollowerListVC.swift */,
+				4C4A810024A30EF000C1AF67 /* UserInfoHeaderVC.swift */,
 				4C4A80FE24A06ACF00C1AF67 /* UserInfoVC.swift */,
 			);
 			path = Screens;
