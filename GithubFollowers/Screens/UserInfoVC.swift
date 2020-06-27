@@ -55,7 +55,7 @@ class UserInfoVC: UIViewController{
         addChild(childVC)
         containerView.addSubview(childVC.view)
         childVC.view.frame = containerView.bounds
-        childVC.didMove(toParent: self) //called after the VC is added
+        childVC.didMove(toParent: self) //called after the VC is added from a container view controller.
     }
     
     
