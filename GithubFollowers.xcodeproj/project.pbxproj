@@ -25,7 +25,7 @@
 		4C4A810724A6F8BF00C1AF67 /* CustomItemInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A810624A6F8BF00C1AF67 /* CustomItemInfoView.swift */; };
 		4C4A810924A7030700C1AF67 /* ItemInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A810824A7030700C1AF67 /* ItemInfoVC.swift */; };
 		4C4A810C24A84EB800C1AF67 /* FollowerItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A810B24A84EB800C1AF67 /* FollowerItemVC.swift */; };
-		4C4A810E24A850CB00C1AF67 /* RepoItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A810D24A850CB00C1AF67 /* RepoItemVC.swift */; };
+		4C4A811024A8549C00C1AF67 /* RepoItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A810F24A8549C00C1AF67 /* RepoItemVC.swift */; };
 		4CAC3A4B2489F55E000A097A /* CustomBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAC3A4A2489F55E000A097A /* CustomBodyLabel.swift */; };
 		4CAC3A4D2489F76B000A097A /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAC3A4C2489F76B000A097A /* CustomButton.swift */; };
 		4CAC3A4F248A0079000A097A /* AlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAC3A4E248A0079000A097A /* AlertVC.swift */; };
@@ -57,7 +57,7 @@
 		4C4A810624A6F8BF00C1AF67 /* CustomItemInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomItemInfoView.swift; sourceTree = "<group>"; };
 		4C4A810824A7030700C1AF67 /* ItemInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemInfoVC.swift; sourceTree = "<group>"; };
 		4C4A810B24A84EB800C1AF67 /* FollowerItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerItemVC.swift; sourceTree = "<group>"; };
-		4C4A810D24A850CB00C1AF67 /* RepoItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoItemVC.swift; sourceTree = "<group>"; };
+		4C4A810F24A8549C00C1AF67 /* RepoItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoItemVC.swift; sourceTree = "<group>"; };
 		4CAC3A4A2489F55E000A097A /* CustomBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBodyLabel.swift; sourceTree = "<group>"; };
 		4CAC3A4C2489F76B000A097A /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		4CAC3A4E248A0079000A097A /* AlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertVC.swift; sourceTree = "<group>"; };
@@ -200,7 +200,7 @@
 			children = (
 				4C4A810824A7030700C1AF67 /* ItemInfoVC.swift */,
 				4C4A810B24A84EB800C1AF67 /* FollowerItemVC.swift */,
-				4C4A810D24A850CB00C1AF67 /* RepoItemVC.swift */,
+				4C4A810F24A8549C00C1AF67 /* RepoItemVC.swift */,
 			);
 			path = ItemInfoVCs;
 			sourceTree = "<group>";
@@ -343,7 +343,7 @@
 				4CF810ED2484DBB4004AE846 /* AppDelegate.swift in Sources */,
 				4C4A80E62490A1D100C1AF67 /* Follower.swift in Sources */,
 				4CF811012484DF44004AE846 /* SearchViewController.swift in Sources */,
-				4C4A810E24A850CB00C1AF67 /* RepoItemVC.swift in Sources */,
+				4C4A811024A8549C00C1AF67 /* RepoItemVC.swift in Sources */,
 				4C4A810324A310F300C1AF67 /* CustomSecondTitleLabel.swift in Sources */,
 				4CF810EF2484DBB4004AE846 /* SceneDelegate.swift in Sources */,
 				4C4A810924A7030700C1AF67 /* ItemInfoVC.swift in Sources */,

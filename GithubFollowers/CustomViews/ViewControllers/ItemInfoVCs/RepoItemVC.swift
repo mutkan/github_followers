@@ -8,7 +8,7 @@
 
 import Foundation
 
-class RepoItemVC: ItemInfoVc {
+class RepoItemVC: ItemInfoVc{
     override func viewDidLoad() {
         super.viewDidLoad()
         configureItems()
