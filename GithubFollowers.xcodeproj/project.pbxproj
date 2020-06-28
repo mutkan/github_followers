@@ -180,6 +180,7 @@
 		4C4A80FA249DF63B00C1AF67 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				4C4A810A24A84EA300C1AF67 /* ItemInfoVCs */,
 				4CAC3A4E248A0079000A097A /* AlertVC.swift */,
 			);
 			path = ViewControllers;
@@ -212,7 +213,6 @@
 				4C4A80E2248F46EC00C1AF67 /* FollowerListVC.swift */,
 				4C4A810024A30EF000C1AF67 /* UserInfoHeaderVC.swift */,
 				4C4A80FE24A06ACF00C1AF67 /* UserInfoVC.swift */,
-				4C4A810824A7030700C1AF67 /* ItemInfoVC.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
