@@ -61,7 +61,8 @@ class ItemInfoVc : UIViewController{
             actionButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
             actionButton.topAnchor.constraint(equalTo: stackView.bottomAnchor, constant: padding),
             actionButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
-            actionButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -padding)
+            actionButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -padding),
+            actionButton.heightAnchor.constraint(equalToConstant: 44)
         ])
     }
     
