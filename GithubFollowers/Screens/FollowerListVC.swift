@@ -160,6 +160,6 @@ extension FollowerListVC: UISearchBarDelegate {
 
 extension FollowerListVC: FollowerListVCDelegate{
     func didRequestFollowers(for userName: String) {
-        // Get follower for that user
+        print("The username is \(userName)")
     }
 }

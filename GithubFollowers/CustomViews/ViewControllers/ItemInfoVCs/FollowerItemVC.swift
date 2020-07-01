@@ -20,4 +20,8 @@ class FollowerItemVC : ItemInfoVc{
         itemInfoViewTwo.set(itemInfoType: .following, withCount: mUser?.following ?? 0)
         actionButton.set(backgroundColor: .systemGreen, title: "Get Followers")
     }
+    
+    override func actionButtonTapped() {
+        delegate.didTapGetFollowers(for: mUser)
+    }
 }

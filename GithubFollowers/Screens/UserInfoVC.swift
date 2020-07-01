@@ -123,6 +123,7 @@ extension UserInfoVC: UserInfoVCDelegate {
     }
     
     func didTapGetFollowers(for user: User) {
-        
+        delegate.didRequestFollowers(for: user.login)
+        dismissVC()
     }
 }
