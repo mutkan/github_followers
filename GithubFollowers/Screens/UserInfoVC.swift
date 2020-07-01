@@ -48,15 +48,26 @@ class UserInfoVC: UIViewController{
             switch result {
             case .success(let user):
                 DispatchQueue.main.async {
-                    self.add(childVC: UserInfoHeaderVC(user: user), to: self.headerView)
-                    self.add(childVC: FollowerItemVC(user: user), to: self.itemViewOne)
-                    self.add(childVC: RepoItemVC(user: user), to: self.itemViewTwo)
-                    self.dateLabel.text = "Github user since "+user.createdAt.convertToDisplayFormat()
+                    self.configureUIElements(with: user)
                 }
             case .failure(let error):
                 self.presentAlertOnMainThread(title: "Something went wrong", message: error.rawValue, buttonTitle: "Ok")
             }
         }
+    }
+    
+    func configureUIElements(with user: User){
+        let repoItemVC          = RepoItemVC(user: user)
+        repoItemVC.delegate     = self
+        
+        let followerItemVC      = FollowerItemVC(user: user)
+        followerItemVC.delegate = self
+        
+        self.add(childVC: UserInfoHeaderVC(user: user), to: self.headerView)
+        self.add(childVC: FollowerItemVC(user: user), to: self.itemViewOne)
+        self.add(childVC: repoItemVC, to: self.itemViewTwo)
+        
+        self.dateLabel.text = "Github user since \(user.createdAt.convertToDisplayFormat())"
     }
     
     func layoutUI(){
