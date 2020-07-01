@@ -31,8 +31,15 @@ class ItemInfoVc : UIViewController{
         super.viewDidLoad()
         configureBackgroundView()
         configureStackView()
+        configureActionButton()
         layoutUI()
     }
+    
+    func configureActionButton(){
+        actionButton.addTarget(self, action: #selector(actionButtonTapped), for: .touchUpInside)
+    }
+    
+    @objc func actionButtonTapped(){}
     
     private func configureBackgroundView() {
         view.layer.cornerRadius = 18
