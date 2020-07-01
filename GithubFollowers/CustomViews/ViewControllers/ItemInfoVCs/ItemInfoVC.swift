@@ -9,7 +9,7 @@
 import UIKit
 
 class ItemInfoVc : UIViewController{
-    var mUser: User? = nil
+    var mUser: User!
     
     let stackView = UIStackView()
     let itemInfoViewOne = CustomItemInfoView()

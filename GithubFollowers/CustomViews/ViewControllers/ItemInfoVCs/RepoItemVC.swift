@@ -21,6 +21,6 @@ class RepoItemVC: ItemInfoVc{
     }
     
     override func actionButtonTapped() {
-        delegate.didTapGithubProfile()
+        delegate.didTapGithubProfile(for: mUser)
     }
 }
