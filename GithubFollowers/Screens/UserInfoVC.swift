@@ -15,6 +15,7 @@ class UserInfoVC: UIViewController{
     let itemViewOne = UIView()
     let itemViewTwo = UIView()
     var itemViewArray: [UIView] = []
+    let dateLabel = CustomBodyLabel(textAlignment: .center)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +46,7 @@ class UserInfoVC: UIViewController{
                     self.add(childVC: UserInfoHeaderVC(user: user), to: self.headerView)
                     self.add(childVC: FollowerItemVC(user: user), to: self.itemViewOne)
                     self.add(childVC: RepoItemVC(user: user), to: self.itemViewTwo)
+                    self.dateLabel.text = "Github user since "+user.createdAt.convertToDisplayFormat()
                 }
             case .failure(let error):
                 self.presentAlertOnMainThread(title: "Something went wrong", message: error.rawValue, buttonTitle: "Ok")
@@ -53,7 +55,7 @@ class UserInfoVC: UIViewController{
     }
     
     func layoutUI(){
-        itemViewArray = [headerView,itemViewOne,itemViewTwo]
+        itemViewArray = [headerView,itemViewOne,itemViewTwo, dateLabel]
         let padding: CGFloat = 20
         let itemHeight: CGFloat = 140
         
@@ -73,7 +75,9 @@ class UserInfoVC: UIViewController{
             itemViewOne.heightAnchor.constraint(equalToConstant: itemHeight),
             
             itemViewTwo.topAnchor.constraint(equalTo: itemViewOne.bottomAnchor, constant: padding),
-            itemViewTwo.heightAnchor.constraint(equalToConstant: itemHeight)
+            itemViewTwo.heightAnchor.constraint(equalToConstant: itemHeight),
+            
+            dateLabel.topAnchor.constraint(equalTo: itemViewTwo.bottomAnchor, constant: padding)
         ])
     }
     
