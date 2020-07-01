@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol UserInfoVCDelegate {
+protocol UserInfoVCDelegate: class {
     func didTapGithubProfile(for user: User)
     func didTapGetFollowers(for user: User)
 }
