@@ -22,7 +22,7 @@ class UserInfoVC: UIViewController{
     var itemViewArray: [UIView] = []
     let dateLabel = CustomBodyLabel(textAlignment: .center)
     
-    weak var followerListVCDelegate: FollowerListVCDelegate!
+    weak var delegate: FollowerListVCDelegate!
     
     override func viewDidLoad() {
         super.viewDidLoad()
