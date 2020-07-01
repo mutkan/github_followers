@@ -8,6 +8,11 @@
 
 import UIKit
 
+protocol UserInfoVCDelegate {
+    func didTapGithubProfile()
+    func didTapGetFollowers()
+}
+
 class UserInfoVC: UIViewController{
     
     var userName: String = ""
@@ -91,5 +96,15 @@ class UserInfoVC: UIViewController{
     
     @objc func dismissVC(){
         dismiss(animated: true)
+    }
+}
+
+extension UserInfoVC: UserInfoVCDelegate {
+    func didTapGithubProfile() {
+        print("Test didTapGithubProfile")
+    }
+    
+    func didTapGetFollowers() {
+        
     }
 }

@@ -16,6 +16,7 @@ class ItemInfoVc : UIViewController{
     let itemInfoViewTwo = CustomItemInfoView()
     let actionButton = CustomButton()
 
+    var delegate: UserInfoVCDelegate!
     
     init(user: User){
         super.init(nibName: nil, bundle: nil)
