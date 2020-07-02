@@ -29,4 +29,16 @@ enum PersistenceManager{
             completed(.failure(.unableToFavorites))
         }
     }
+    
+    static func save(favorites: [Follower]) -> CustomErr?{
+        do{
+            let encoder = JSONEncoder()
+            let encodedFavorites = try encoder.encode(favorites)
+            defaults.set(encodedFavorites, forKey: Keys.favorites)
+        }
+        catch{
+            return .unableToFavorites
+        }
+        return nil
+    }
 }
