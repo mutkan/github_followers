@@ -37,7 +37,5 @@ class CustomTextField: UITextField{
         autocorrectionType = .yes
         returnKeyType = .go
         placeholder = "Enter a username"
-        
-        
     }
 }
