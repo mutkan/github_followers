@@ -32,11 +32,17 @@ class FollowerListVC: UIViewController{
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         navigationController?.navigationBar.prefersLargeTitles = true
+        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonTapped))
+        navigationItem.rightBarButtonItem = addButton
         
         configureCollectionView()
         configureDataSource()
         configureSearchController()
         getFollowers(userName: userName, page: page)
+    }
+    
+    @objc func addButtonTapped(){
+        print("Add button tapped")
     }
     
     func configureSearchController(){
