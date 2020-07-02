@@ -160,6 +160,16 @@ extension FollowerListVC: UISearchBarDelegate {
 
 extension FollowerListVC: FollowerListVCDelegate{
     func didRequestFollowers(for userName: String) {
-        print("The username is \(userName)")
+        self.userName       = userName
+        title               = userName
+        isSearching         = false
+        hasMoreFollowers    = true
+        page                = 1
+        
+        followers.removeAll()
+        filteredFollowers.removeAll()
+        collectionView.setContentOffset(.zero, animated: true)
+        
+        getFollowers(userName: userName, page: page)
     }
 }
