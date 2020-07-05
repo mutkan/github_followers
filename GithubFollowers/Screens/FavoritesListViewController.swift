@@ -11,12 +11,20 @@ import UIKit
 class FavoritesListViewController: UIViewController {
     
     let uiTableView = UITableView()
-    let favorites: [Follower] = []
+    var favorites: [Follower] = []
     
     func configureViewController(){
         title = "Favorites"
         view.backgroundColor = .systemBackground
         navigationController?.navigationBar.prefersLargeTitles = true
+    }
+    
+    func configureTableView(){
+        view.addSubview(uiTableView)
+        uiTableView.frame = view.bounds
+        uiTableView.rowHeight = 80
+        uiTableView.delegate = self
+        uiTableView.dataSource = self
     }
     
     override func viewDidLoad() {
@@ -36,5 +44,19 @@ class FavoritesListViewController: UIViewController {
                 break
             }
         }
+    }
+}
+
+extension FavoritesListViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return favorites.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: FavoriteCell.reUseID, for: indexPath) as? FavoriteCell
+        
+        let favorite = favorites[indexPath.row]
+        cell?.set(favorite: favorite)
+        return cell!
     }
 }
