@@ -52,7 +52,7 @@ class FavoritesListViewController: UIViewController {
                 }
                 
             case .failure(let error):
-                break
+                self.presentAlertOnMainThread(title: "Something went wrong!", message: error.rawValue, buttonTitle: "Ok")
             }
         }
     }
