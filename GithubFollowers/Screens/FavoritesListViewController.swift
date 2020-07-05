@@ -21,10 +21,16 @@ class FavoritesListViewController: UIViewController {
     
     func configureTableView(){
         view.addSubview(uiTableView)
-        uiTableView.frame = view.bounds
-        uiTableView.rowHeight = 80
-        uiTableView.delegate = self
-        uiTableView.dataSource = self
+        uiTableView.frame       = view.bounds
+        uiTableView.rowHeight   = 80
+        uiTableView.delegate    = self
+        uiTableView.dataSource  = self
+        uiTableView.register(FavoriteCell.self, forCellReuseIdentifier: FavoriteCell.reUseID)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        getFavorites()
     }
     
     override func viewDidLoad() {
@@ -32,7 +38,6 @@ class FavoritesListViewController: UIViewController {
         
         configureViewController()
         configureTableView()
-        getFavorites()
     }
     
     func getFavorites(){
