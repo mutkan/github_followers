@@ -47,10 +47,11 @@ class FavoritesListViewController: UIViewController {
             switch result{
             case .success(let favorites):
                 if favorites.isEmpty {
-                    self.showEmptyStateView(with: "No Favorites? \n Add one on the follower screen", in: self.view)
+                    self.showEmptyStateView(with: "No Favorites? \n\n Add one on the follower screen", in: self.view)
                 }else{
                     self.favorites = favorites
                     DispatchQueue.main.async {
+                        self.view.bringSubviewToFront(self.uiTableView)
                         self.uiTableView.reloadData()
                     }
                     
