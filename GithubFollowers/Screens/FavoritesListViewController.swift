@@ -9,15 +9,29 @@
 import UIKit
 
 class FavoritesListViewController: UIViewController {
+    
+    let uiTableView = UITableView()
+    let favorites: [Follower] = []
+    
+    func configureViewController(){
+        title = "Favorites"
+        view.backgroundColor = .systemBackground
+        navigationController?.navigationBar.prefersLargeTitles = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .yellow
+       configureViewController()
         
+        getFavorites()
+    }
+    
+    func getFavorites(){
         PersistenceManager.retrieveFavorites { result in
             switch result{
             case .success(let favorites):
-                print(favorites)
+                self.favorites = favorites
             case .failure(let error):
                 break
             }
