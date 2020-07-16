@@ -41,3 +41,7 @@ enum DeviceType {
         return isiPhoneX || isiPhoneXsMaxAndXr
     }
 }
+
+enum Images{
+    static let ghLogo = UIImage(named: "gh-logo")
+}

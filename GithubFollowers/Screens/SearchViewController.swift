@@ -60,7 +60,7 @@ class SearchViewController: UIViewController, UITextFieldDelegate{
     func configureLogoImageView(){
         view.addSubview(logoImageView)
         
-        logoImageView.image = UIImage(named: "gh-logo")
+        logoImageView.image = Images.ghLogo
         logoImageView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
