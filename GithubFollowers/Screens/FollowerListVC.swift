@@ -13,13 +13,23 @@ protocol FollowerListVCDelegate: class {
 }
 
 class FollowerListVC: UIViewController{
-    var userName: String = ""
+    var username: String = ""
     var page = 1
     var hasMoreFollowers = true
     
     var followers: [Follower] = []
     var filteredFollowers: [Follower] = []
     var isSearching = false
+    
+    init(username: String) {
+        super.init(nibName: nil, bundle: nil)
+        self.username = username
+        title = username
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     enum Section{
         case main
@@ -38,13 +48,13 @@ class FollowerListVC: UIViewController{
         configureCollectionView()
         configureDataSource()
         configureSearchController()
-        getFollowers(userName: userName, page: page)
+        getFollowers(userName: username, page: page)
     }
     
     @objc func addButtonTapped(){
         showLoadingView()
         
-        NetworkManager.shared.getUserInfo(for: userName){ [weak self] result in
+        NetworkManager.shared.getUserInfo(for: username){ [weak self] result in
             guard let self = self else {return}
             
             self.dismissLoadingView()
@@ -151,7 +161,7 @@ extension FollowerListVC: UICollectionViewDelegate {
         if offsetY > contentHeight - height{
             guard hasMoreFollowers else { return }
             page += 1
-            getFollowers(userName: userName, page: page)
+            getFollowers(userName: username, page: page)
         }
         
     }
@@ -191,7 +201,7 @@ extension FollowerListVC: UISearchBarDelegate {
 
 extension FollowerListVC: FollowerListVCDelegate{
     func didRequestFollowers(for userName: String) {
-        self.userName       = userName
+        self.username       = userName
         title               = userName
         isSearching         = false
         hasMoreFollowers    = true
