@@ -82,6 +82,8 @@ class SearchViewController: UIViewController, UITextFieldDelegate{
             return
         }
         
+        userTextField.resignFirstResponder()
+        
         let followerVC = FollowerListVC()
         followerVC.userName = userTextField.text ?? ""
         followerVC.title = userTextField.text
