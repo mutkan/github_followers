@@ -48,6 +48,7 @@ class FavoritesListViewController: UIViewController {
             case .success(let favorites):
                 if favorites.isEmpty {
                     self.showEmptyStateView(with: "No Favorites? \n\n Add one on the follower screen", in: self.view)
+                    self.uiTableView.separatorStyle = .none
                 }else{
                     self.favorites = favorites
                     DispatchQueue.main.async {
