@@ -35,6 +35,7 @@
 		4CAC3A53248A0BD9000A097A /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAC3A52248A0BD9000A097A /* UIViewController+Ext.swift */; };
 		4CF5C07724B19B3E00A60705 /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF5C07624B19B3E00A60705 /* FavoriteCell.swift */; };
 		4CF5C07A24C00DEC00A60705 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF5C07924C00DEC00A60705 /* CustomTabBarController.swift */; };
+		4CF5C07C24C15E2400A60705 /* CustomAlertContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF5C07B24C15E2400A60705 /* CustomAlertContainerView.swift */; };
 		4CF810ED2484DBB4004AE846 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF810EC2484DBB4004AE846 /* AppDelegate.swift */; };
 		4CF810EF2484DBB4004AE846 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF810EE2484DBB4004AE846 /* SceneDelegate.swift */; };
 		4CF810F62484DBB5004AE846 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CF810F52484DBB5004AE846 /* Assets.xcassets */; };
@@ -72,6 +73,7 @@
 		4CAC3A52248A0BD9000A097A /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		4CF5C07624B19B3E00A60705 /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
 		4CF5C07924C00DEC00A60705 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		4CF5C07B24C15E2400A60705 /* CustomAlertContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertContainerView.swift; sourceTree = "<group>"; };
 		4CF810E92484DBB4004AE846 /* GithubFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CF810EC2484DBB4004AE846 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CF810EE2484DBB4004AE846 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 			children = (
 				4C4A80FC249FFED000C1AF67 /* EmptyStateView.swift */,
 				4C4A810624A6F8BF00C1AF67 /* CustomItemInfoView.swift */,
+				4CF5C07B24C15E2400A60705 /* CustomAlertContainerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				4C4A80E3248F46EC00C1AF67 /* FollowerListVC.swift in Sources */,
 				4C4A810724A6F8BF00C1AF67 /* CustomItemInfoView.swift in Sources */,
 				4C4A810C24A84EB800C1AF67 /* FollowerItemVC.swift in Sources */,
+				4CF5C07C24C15E2400A60705 /* CustomAlertContainerView.swift in Sources */,
 				4C479AAF248774B1001FE7C0 /* CustomTitleLabel.swift in Sources */,
 				4CF811032484DFE0004AE846 /* FavoritesListViewController.swift in Sources */,
 				4C4A810524A3118300C1AF67 /* Constants.swift in Sources */,

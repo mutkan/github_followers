@@ -9,7 +9,7 @@
 import UIKit
 
 class AlertVC: UIViewController{
-    let containerView = UIView()
+    let containerView = CustomAlertContainerView()
     let titleLabel = CustomTitleLabel(textAlignment: .center, fontSize: 20)
     let messageLabel = CustomBodyLabel(textAlignment: .center)
     let actionButton = CustomButton(backgroundColor: .systemPink, title: "Ok")
@@ -45,12 +45,6 @@ class AlertVC: UIViewController{
     
     func configureContainerView(){
         view.addSubview(containerView)
-        
-        containerView.backgroundColor = .systemBackground
-        containerView.layer.cornerRadius = 22
-        containerView.layer.borderWidth = 2
-        containerView.layer.borderColor = UIColor.blue.cgColor
-        containerView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
             containerView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
