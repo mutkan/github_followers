@@ -45,4 +45,5 @@ enum DeviceType {
 enum Images{
     static let ghLogo               = UIImage(named: "gh-logo")
     static let avatarPlaceHolder    = UIImage(named: "avatar-placeholder")
+    static let emptyStateLogo       = UIImage(named: "empty-state-logo")
 }
