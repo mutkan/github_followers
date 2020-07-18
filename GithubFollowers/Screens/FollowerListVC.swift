@@ -12,7 +12,7 @@ protocol FollowerListVCDelegate: class {
     func didRequestFollowers(for userName: String)
 }
 
-class FollowerListVC: UIViewController{
+class FollowerListVC: CustomDataLoading{
     var username: String = ""
     var page = 1
     var hasMoreFollowers = true
