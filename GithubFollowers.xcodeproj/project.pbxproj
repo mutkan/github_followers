@@ -33,6 +33,7 @@
 		4CAC3A4D2489F76B000A097A /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAC3A4C2489F76B000A097A /* CustomButton.swift */; };
 		4CAC3A4F248A0079000A097A /* AlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAC3A4E248A0079000A097A /* AlertVC.swift */; };
 		4CAC3A53248A0BD9000A097A /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAC3A52248A0BD9000A097A /* UIViewController+Ext.swift */; };
+		4CB57B1524E6505F003CA664 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB57B1424E6505F003CA664 /* UIView+Ext.swift */; };
 		4CF5C07724B19B3E00A60705 /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF5C07624B19B3E00A60705 /* FavoriteCell.swift */; };
 		4CF5C07A24C00DEC00A60705 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF5C07924C00DEC00A60705 /* CustomTabBarController.swift */; };
 		4CF5C07C24C15E2400A60705 /* CustomAlertContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF5C07B24C15E2400A60705 /* CustomAlertContainerView.swift */; };
@@ -72,6 +73,7 @@
 		4CAC3A4C2489F76B000A097A /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		4CAC3A4E248A0079000A097A /* AlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertVC.swift; sourceTree = "<group>"; };
 		4CAC3A52248A0BD9000A097A /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		4CB57B1424E6505F003CA664 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		4CF5C07624B19B3E00A60705 /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
 		4CF5C07924C00DEC00A60705 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		4CF5C07B24C15E2400A60705 /* CustomAlertContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertContainerView.swift; sourceTree = "<group>"; };
@@ -242,6 +244,7 @@
 				4CAC3A52248A0BD9000A097A /* UIViewController+Ext.swift */,
 				4C4A811124AC32FC00C1AF67 /* String+Ext.swift */,
 				4C4A811324AC351400C1AF67 /* Date+Ext.swift */,
+				4CB57B1424E6505F003CA664 /* UIView+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				4C4A80F02493409D00C1AF67 /* CustomAvatarImageView.swift in Sources */,
 				4CAC3A53248A0BD9000A097A /* UIViewController+Ext.swift in Sources */,
 				4CF5C07E24C37A6300A60705 /* CustomDataLoading.swift in Sources */,
+				4CB57B1524E6505F003CA664 /* UIView+Ext.swift in Sources */,
 				4C4A810124A30EF000C1AF67 /* UserInfoHeaderVC.swift in Sources */,
 				4C4A80FF24A06AD000C1AF67 /* UserInfoVC.swift in Sources */,
 			);

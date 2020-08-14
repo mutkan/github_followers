@@ -35,6 +35,8 @@ class AlertVC: UIViewController{
         super.viewDidLoad()
         
         view.backgroundColor = UIColor.black.withAlphaComponent(0.75)
+        view.addSubview(containerView)
+        containerView.addSubviews(titleLabel,messageLabel,actionButton)
         
         configureContainerView()
         configureTitleLabel()
@@ -44,8 +46,6 @@ class AlertVC: UIViewController{
     }
     
     func configureContainerView(){
-        view.addSubview(containerView)
-        
         NSLayoutConstraint.activate([
             containerView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             containerView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
@@ -54,8 +54,6 @@ class AlertVC: UIViewController{
     }
     
     func configureTitleLabel(){
-        containerView.addSubview(titleLabel)
-        
         titleLabel.text = alertTitle ?? "Something went wrong"
         
         NSLayoutConstraint.activate([
@@ -67,8 +65,6 @@ class AlertVC: UIViewController{
     }
     
     func configureMessageLabel(){
-        containerView.addSubview(messageLabel)
-        
         messageLabel.text = alertMessage ?? "Something went wrong"
         messageLabel.numberOfLines = 4
         
@@ -80,8 +76,6 @@ class AlertVC: UIViewController{
     }
     
     func configureActionButton(){
-        containerView.addSubview(actionButton)
-        
         actionButton.setTitle(buttonTitle ?? "Ok", for: .normal)
         actionButton.addTarget(self, action: #selector(dismissVC), for: .touchUpInside)
         

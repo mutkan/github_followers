@@ -27,13 +27,12 @@ class EmptyStateView: UIView{
     }
     
     func configure() {
+        addSubviews(messageLabel, logoImageView)
         configureMessageLabel()
         configureLogoImageView()
     }
     
     func configureMessageLabel(){
-        addSubview(messageLabel)
-        
         messageLabel.numberOfLines = 3
         messageLabel.textColor = .secondaryLabel
         
@@ -47,8 +46,6 @@ class EmptyStateView: UIView{
     }
     
     func configureLogoImageView(){
-        addSubview(logoImageView)
-        
         logoImageView.image = Images.emptyStateLogo
         logoImageView.translatesAutoresizingMaskIntoConstraints = false
         
