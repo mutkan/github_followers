@@ -20,6 +20,7 @@ class FollowerListVC: CustomDataLoading{
     var followers: [Follower] = []
     var filteredFollowers: [Follower] = []
     var isSearching = false
+    var isLoadingMoreFollowers = false
     
     init(username: String) {
         super.init(nibName: nil, bundle: nil)
@@ -90,6 +91,7 @@ class FollowerListVC: CustomDataLoading{
     }
     
     func getFollowers(userName: String, page: Int){
+        isLoadingMoreFollowers = true
         showLoadingView()
         NetworkManager.shared.getFollowers(for: userName, page: page){ [weak self] result in
             guard let self = self else{
@@ -113,6 +115,7 @@ class FollowerListVC: CustomDataLoading{
             case .failure(let error):
                 self.presentAlertOnMainThread(title: "Error", message: error.rawValue , buttonTitle: "Ok")
             }
+            self.isLoadingMoreFollowers = false
         }
     }
     
@@ -159,7 +162,7 @@ extension FollowerListVC: UICollectionViewDelegate {
         print("height: \(height)")
         
         if offsetY > contentHeight - height{
-            guard hasMoreFollowers else { return }
+            guard hasMoreFollowers, !isLoadingMoreFollowers else { return }
             page += 1
             getFollowers(userName: username, page: page)
         }
